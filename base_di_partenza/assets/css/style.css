@@ -200,7 +200,7 @@ footer a {
   color: fuchsia;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   body {
     font-size: 2em;
   }
@@ -267,7 +267,7 @@ footer a {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   body {
     font-size: 1.5em;
     width: 90%;
@@ -280,8 +280,12 @@ footer a {
   }
 
   header div p,
-  nav ul li {
+  nav ul li a {
     font-weight: 500;
+  }
+
+  header div {
+    width: 74%;
   }
 
   header div,
@@ -290,51 +294,30 @@ footer a {
   header nav {
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 0;
+  }
+
+  header div img,
+  header div p {
+    margin: 0;
   }
 
   header div img {
-    margin-bottom: 0;
-    width: 30%;
-    margin: 0 20px;
-  }
-
-  header div {
-    position: absolute;
-    top: 2%;
-    left: 8%;
-  }
-
-  header nav {
-    position: absolute;
-    top: 3%;
-    right: 8%;
-  }
-
-  nav ul li a {
-    font-weight: 500;
+    width: 10vw;
+    margin-right: 10px;
   }
 
   h1 {
     font-size: 2.5em;
   }
 
-  #tiles {
-    font-size: 0;
-  }
-
   article iframe,
   article section {
     display: inline-block;
-    font-size: initial;
+    margin-inline: -2px;
     width: 50%;
     vertical-align: top;
     height: 22vh;
     border-radius: 10px;
-  }
-
-  aside {
-    font-size: 0;
   }
 
   aside h2 {
@@ -344,8 +327,8 @@ footer a {
 
   aside div {
     display: inline-block;
-    font-size: initial;
-    width: 33%;
+    width: 33.33%;
+    margin-inline: -2px;
   }
 
   aside div p {
@@ -354,5 +337,40 @@ footer a {
 
   footer {
     font-size: 1em;
+  }
+
+  footer address {
+    margin: 0 auto;
+    width: 58%;
+  }
+}
+@media print {
+  body {
+    font-size: 24px;
+    padding: 0;
+    background-image: none;
+  }
+
+  main {
+    box-shadow: none;
+    margin: 0;
+  }
+
+  thead tr {
+    background-color: #ffffff;
+    color: black;
+  }
+
+  thead tr,
+  tbody tr {
+    border-bottom: 1px solid #5a5858;
+  }
+
+  header,
+  iframe,
+  article section,
+  aside,
+  footer {
+    display: none;
   }
 }
