@@ -314,11 +314,12 @@ footer a {
   nav ul li a {
     font-weight: 500;
   }
+
   h1 {
     font-size: 2.5em;
   }
 
-  article {
+  #tiles {
     font-size: 0;
   }
 
@@ -336,10 +337,15 @@ footer a {
     font-size: 0;
   }
 
+  aside h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
   aside div {
     display: inline-block;
     font-size: initial;
-    width: 33.3%;
+    width: 33%;
   }
 
   aside div p {
@@ -348,6 +354,5 @@ footer a {
 
   footer {
     font-size: 1em;
-    text-align: center;
   }
 }
